@@ -7,6 +7,7 @@ export default function TextArea(props) {
     const handleUpClick = () => {
         let newText = text.toUpperCase();
         setText(newText)
+        props.showAlert("Converted to UpperCase", "success");
     }
 
     const handleOnChange = (event) => {
